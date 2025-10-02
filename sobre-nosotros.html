@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre nosotros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #12004d 0%, #3a1c71 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .main-container {
+      background: rgba(30, 30, 60, 0.85);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      padding: 40px 30px;
+      margin-top: 40px;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    h1,
+    h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 24px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 32px;
+    }
+
+    .descripcion p {
+      color: #e0e0e0;
+      font-size: 1.2rem;
+      margin-bottom: 22px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    ul.tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      padding: 0;
+      list-style: none;
+      margin-bottom: 0;
+    }
+
+    ul.tech-list li {
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 16px;
+      padding: 18px 16px 10px 16px;
+      text-align: center;
+      min-width: 120px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s;
+    }
+
+    ul.tech-list li:hover {
+      transform: translateY(-6px) scale(1.05);
+      background: rgba(106, 17, 203, 0.12);
+    }
+
+    ul.tech-list h4 {
+      color: #a6bfff;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    ul.tech-list img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 0;
+      filter: drop-shadow(0 2px 8px rgba(37, 117, 252, 0.15));
+    }
+
+    footer {
+      color: #bdbdbd;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      .main-container {
+        padding: 18px 4px;
+      }
+
+      ul.tech-list {
+        gap: 16px;
+      }
+
+      ul.tech-list li {
+        min-width: 90px;
+        padding: 10px 6px 6px 6px;
+      }
+    }
+
+    a.btn {
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="d-flex align-items-center justify-content-center mb-4 w-100">
+      <a href="index.html" class="btn btn-outline-light btn-sm ms-2">
+        <i class="bi bi-arrow-left"></i> Regresar
+      </a>
+      <h1 class="mb-0 mx-auto"><i class="bi bi-people-fill me-2"></i>Sobre nosotros</h1>
+    </div>
+    <div class="descripcion mb-4">
+      <p>Somos un equipo de programadores apasionados por la tecnología y la innovación.</p>
+      <p>Nuestro equipo de expertos está listo para llevar tu proyecto al siguiente nivel.</p>
+      <p>Diseñamos páginas modernas y optimizadas para que tu negocio tenga presencia digital desde el día uno.</p>
+      <p>Nos especializamos en desarrollo web, aplicaciones móviles y soluciones a medida para empresas de todos los
+        tamaños.</p>
+      <p>Nos enorgullece ofrecer un servicio personalizado y atención al cliente excepcional.</p>
+      <p>Contáctanos para discutir cómo podemos ayudarte a alcanzar tus objetivos digitales.</p>
+    </div>
+    <h1 class="mt-5"><i class="bi bi-layers-half me-2"></i>Nuestro stack de tecnologías</h1>
+    <h2>Lenguajes para desarrollo web</h2>
+    <ul class="tech-list mb-4">
+      <li>
+        <h4>HTML</h4><img src="images/icons8-html-5-96.png" alt="HTML">
+      </li>
+      <li>
+        <h4>CSS</h4><img src="images/icons8-css-logo-96.png" alt="CSS">
+      </li>
+      <li>
+        <h4>JavaScript</h4><img src="images/icons8-javascript-96.png" alt="JavaScript">
+      </li>
+      <li>
+        <h4>SQL</h4><img src="images/icons8-sql-96.png" alt="SQL">
+      </li>
+      <li>
+        <h4>PHP</h4><img src="images/icons8-php-96.png" alt="PHP">
+      </li>
+    </ul>
+    <h2>Lenguajes para desarrollo móvil</h2>
+    <ul class="tech-list mb-4">
+      <li>
+        <h4>Java</h4><img src="images/icons8-java-logo-96.png" alt="Java">
+      </li>
+      <li>
+        <h4>Kotlin</h4><img src="images/icons8-kotlin-96.png" alt="Kotlin">
+      </li>
+    </ul>
+    <h2>Frameworks y librerías</h2>
+    <ul class="tech-list mb-4">
+      <li>
+        <h4>Bootstrap</h4><img src="images/icons8-bootstrap-logo-96.png" alt="Bootstrap">
+      </li>
+      <li>
+        <h4>Angular</h4><img src="images/icons8-angularjs-96.png" alt="Angular">
+      </li>
+      <li>
+        <h4>Laravel</h4><img src="images/icons8-laravel-96.png" alt="Laravel">
+      </li>
+      <li>
+        <h4>Vue.js</h4><img src="images/icons8-vue-js-96.png" alt="Vue.js">
+      </li>
+    </ul>
+    <h2>Bases de datos</h2>
+    <ul class="tech-list mb-0">
+      <li>
+        <h4>MySQL</h4><img src="images/icons8-mysql-logo-96.png" alt="MySQL">
+      </li>
+      <li>
+        <h4>PostgreSQL</h4><img src="images/icons8-postgresql-96.png" alt="PostgreSQL">
+      </li>
+      <li>
+        <h4>MongoDB</h4><img src="images/icons8-mongo-db-96.png" alt="MongoDB">
+      </li>
+    </ul>
+  </div>
+  <footer class="w-100">
+    <!-- &copy; 2025 Tu Empresa. Todos los derechos reservados. -->
+  </footer>
+
+  <script>
+    function escritor(element, speed = 50) {
+      const text = element.innerHTML;
+      element.innerHTML = '';
+      let index = 0;
+
+      function type() {
+        if (index < text.length) {
+          element.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(type, speed);
+        }
+      }
+
+      type();
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".main-container p").forEach(p => escritor(p, 30));
+    });
+  </script>
+</body>
+
+</html>
